@@ -91,7 +91,7 @@ fun minFor(r: Array<Int>): Int {
     }
 
 
-    return min // cause fail
+    return min
 }
 
 /**
