@@ -152,7 +152,7 @@ fun base36(b: BigInteger): String = b.toString(36) // Running toString with a ra
  * @param s the string to split
  * @return the split string as a tuple
  */
-fun splitInHalf(s: String): Pair<String, String> = TODO()
+fun splitInHalf(s: String): Pair<String, String> = TODO("Fail first")
 
 /**
  * Determines if the given string s is a palindrome.
