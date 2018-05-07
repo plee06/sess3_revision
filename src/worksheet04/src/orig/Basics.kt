@@ -108,7 +108,10 @@ fun minFor(r: Array<Int>): Int {
  * @param r the array of integers
  * @return the minimum integer in the array
  */
-fun minRecursive(r: Array<Int>): Int = TODO()
+fun minRecursive(r: Array<Int>): Int {
+
+
+}
 
 /**
  * Return the base 36 equivalent of the BigInteger b.
