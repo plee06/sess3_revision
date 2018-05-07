@@ -63,7 +63,7 @@ fun minWhile(r: Array<Int>): Int {
         i ++
     }
 
-    return min - 1 // to fail
+    return min
 }
 
 
