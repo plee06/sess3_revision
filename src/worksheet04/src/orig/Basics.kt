@@ -21,7 +21,7 @@ import java.math.BigInteger
  * @param b operand b
  * @return the sum
  */
-fun add(a: Int, b: Int): Int = a - b // Simply return the sum of a + b, remember that when testing it should be RED, GREEN
+fun add(a: Int, b: Int): Int = a + b // Simply return the sum of a + b, remember that when testing it should be RED, GREEN
 // i.e. fail then pass.
 
 /**
