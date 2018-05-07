@@ -79,7 +79,20 @@ fun minWhile(r: Array<Int>): Int {
  * @param r the array of integers
  * @return the minimum integer in the array
  */
-fun minFor(r: Array<Int>): Int = TODO()
+fun minFor(r: Array<Int>): Int {
+
+    // declare super large value
+    var min = Int.MAX_VALUE
+    // loop through and define new min for every value that is less than
+    for (n in r) {
+        if (min > n) {
+            min = n
+        }
+    }
+
+
+    return 99 // cause fail
+}
 
 /**
  * Write a function called orig.minRecursive that returns the minimum integer in the Array r.
