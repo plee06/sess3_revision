@@ -31,7 +31,7 @@ fun add(a: Int, b: Int): Int = a + b // Simply return the sum of a + b, remember
  * @param end the end of the range
  * @return the inclusive Range from start to end
  */
-fun inRange(start: Int, end: Int): IntRange = TODO()
+fun inRange(start: Int, end: Int): IntRange = start..end
 
 /**
  * Write a function that returns a Range of odd n odd integers starting at 1.
