@@ -39,7 +39,7 @@ fun inRange(start: Int, end: Int): IntRange = start..end
  * @param n the number of odd integers in the range
  * @return a Range of odd integers, excluding the last add integer
  */
-fun oddRange(n: Int): IntRange = TODO()
+fun oddRange(n: Int): IntRange = // Failing test
 
 /**
  * Write a function that returns the minimum integer in the Array r.

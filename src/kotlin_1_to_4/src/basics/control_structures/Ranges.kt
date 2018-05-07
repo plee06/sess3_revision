@@ -13,6 +13,14 @@ val oneToTen = 1..10
 
 fun main(args: Array<String>)
 {
+
+    // check if inclusive or not.
+    for (num in oneToTen) println(num) // ctrl shift f10 for quick fire
+
+    // Kotlin ranges are inclusive!
+    return
+
+
     if (11 in oneToTen)
     {
         println("Yup, 11 is in the range of one to ten.")
