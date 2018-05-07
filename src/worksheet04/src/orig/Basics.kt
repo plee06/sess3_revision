@@ -110,6 +110,16 @@ fun minFor(r: Array<Int>): Int {
  */
 fun minRecursive(r: Array<Int>): Int {
 
+    if (r.size != 1 && r.first() < r.last()) {
+        return minRecursive(r.dropLast(1).toTypedArray())
+    } else if (r.size != 1 && r.last() < r.first()) {
+        return minRecursive(r.drop(1).toTypedArray())
+    } else if (r.size != 1 && r.last() == r.first()) {
+        return minRecursive(r.dropLast(1).toTypedArray())
+    } else {
+        println("the minimum value is ${r.first()}")
+        return r.first()
+    }
 
 }
 
@@ -119,7 +129,7 @@ fun minRecursive(r: Array<Int>): Int {
  * @param b a big integer
  * @return the base 36 equivalent
  */
-fun base36(b: BigInteger): String = TODO()
+fun base36(b: BigInteger): String = b
 
 /**
  * Splits the String s in half.

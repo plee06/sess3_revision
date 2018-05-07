@@ -95,6 +95,8 @@ fun minFor(r: Array<Int>): Int {
  * @param r the array of integers
  * @return the minimum integer in the array
  */
+
+// So this isn't a recursive method but what it does is it utilizes the reduce method
 fun minRecursive(r: Array<Int>): Int = r.reduce { acc, e -> if (acc < e) acc else e }
 
 /**
