@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>VisibilityModifiers</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,0); }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+VisibilityModifiers</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<a name="l1"><span class="ln">1    </span></a><span class="s0">Just like in Java, Kotlin offers up visibility modifiers for making certain code visible and others not. 
+<a name="l2"><span class="ln">2    </span></a> 
+<a name="l3"><span class="ln">3    </span></a>In Kotlin there are four visibility modifiers: public, internal, protected, and private. 
+<a name="l4"><span class="ln">4    </span></a> 
+<a name="l5"><span class="ln">5    </span></a>When no modifier is given, the &quot;default&quot; is used which is public. 
+<a name="l6"><span class="ln">6    </span></a> 
+<a name="l7"><span class="ln">7    </span></a>Again the four visibility modifiers in Kotlin are: 
+<a name="l8"><span class="ln">8    </span></a> 
+<a name="l9"><span class="ln">9    </span></a>1. public 
+<a name="l10"><span class="ln">10   </span></a>2. internal 
+<a name="l11"><span class="ln">11   </span></a>3. protected 
+<a name="l12"><span class="ln">12   </span></a>4. private 
+<a name="l13"><span class="ln">13   </span></a> 
+<a name="l14"><span class="ln">14   </span></a>private -&gt; can only be accessed in the same file, or if it's a class it is only accessible in that class! 
+<a name="l15"><span class="ln">15   </span></a>protected -&gt; functions / properties declared as protected inside a class / interface only visible to members 
+<a name="l16"><span class="ln">16   </span></a>of that class or interface as well as subclasses 
+<a name="l17"><span class="ln">17   </span></a> 
+<a name="l18"><span class="ln">18   </span></a>Wait, pause. So what's the difference between private and protected? 
+<a name="l19"><span class="ln">19   </span></a> 
+<a name="l20"><span class="ln">20   </span></a>private =&gt; MUST BE SAME EXACT CLASS 
+<a name="l21"><span class="ln">21   </span></a>protected =&gt; AVAILABLE TO SUBCLASSES! 
+<a name="l22"><span class="ln">22   </span></a> 
+<a name="l23"><span class="ln">23   </span></a>internal -&gt; the whole point of internal is to act like &quot;public&quot; but instead of being &quot;public&quot; to everybody 
+<a name="l24"><span class="ln">24   </span></a>it is only public to the same module, i.e. think of a package. 
+<a name="l25"><span class="ln">25   </span></a> 
+<a name="l26"><span class="ln">26   </span></a>&quot;public to module, not public to the universe...&quot; 
+<a name="l27"><span class="ln">27   </span></a> 
+<a name="l28"><span class="ln">28   </span></a> 
+<a name="l29"><span class="ln">29   </span></a></span></pre>
+</body>
+</html>

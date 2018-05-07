@@ -1,0 +1,11 @@
+In Kotlin the return statement is similar to Java.
+
+
+The thing with Kotlin though is that because we can nest functions in a "functional programming" way
+the return will return out of the inner most function, i.e. the scope it is currently in.
+
+
+Also, when it comes to closures like running a .forEach and testing for some condition, the return can have a label
+with return@forEach or we can label the .forEach stop@
+
+Refer to the documentation or Programming Kotlin book for more details.

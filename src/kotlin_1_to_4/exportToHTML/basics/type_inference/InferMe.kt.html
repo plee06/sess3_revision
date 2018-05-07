@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>InferMe.kt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,128); font-weight: bold; }
+.s1 { color: rgb(0,0,0); }
+.s2 { color: rgb(128,128,128); font-style: italic; }
+.s3 { color: rgb(0,0,255); }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+InferMe.kt</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<a name="l1"><span class="ln">1    </span></a><span class="s0">package </span><span class="s1">basics.type_inference 
+<a name="l2"><span class="ln">2    </span></a> 
+<a name="l3"><span class="ln">3    </span></a></span><span class="s0">fun </span><span class="s1">main(args: Array&lt;String&gt;) 
+<a name="l4"><span class="ln">4    </span></a>{ 
+<a name="l5"><span class="ln">5    </span></a>    </span><span class="s2">// In Kotlin, the types can be inferred.</span><span class="s1"> 
+<a name="l6"><span class="ln">6    </span></a> 
+<a name="l7"><span class="ln">7    </span></a>    </span><span class="s2">/* 
+<a name="l8"><span class="ln">8    </span></a>    * Note the difference in comparison with Java where with variable initializations, the type has to be 
+<a name="l9"><span class="ln">9    </span></a>    * explicitly declared. 
+<a name="l10"><span class="ln">10   </span></a>    * 
+<a name="l11"><span class="ln">11   </span></a>    **/</span><span class="s1"> 
+<a name="l12"><span class="ln">12   </span></a> 
+<a name="l13"><span class="ln">13   </span></a>    </span><span class="s2">// Consider ...</span><span class="s1"> 
+<a name="l14"><span class="ln">14   </span></a>    </span><span class="s0">var </span><span class="s1">someNumber: Int = </span><span class="s3">42</span><span class="s1"> 
+<a name="l15"><span class="ln">15   </span></a>    </span><span class="s2">// vs.</span><span class="s1"> 
+<a name="l16"><span class="ln">16   </span></a>    </span><span class="s0">var </span><span class="s1">otherNumber = </span><span class="s3">99</span><span class="s1"> 
+<a name="l17"><span class="ln">17   </span></a> 
+<a name="l18"><span class="ln">18   </span></a>    </span><span class="s2">// Type inference hello!</span><span class="s1"> 
+<a name="l19"><span class="ln">19   </span></a> 
+<a name="l20"><span class="ln">20   </span></a>    </span><span class="s2">// This allows for reduction of &quot;boilerplate&quot; while keeping type safety</span><span class="s1"> 
+<a name="l21"><span class="ln">21   </span></a> 
+<a name="l22"><span class="ln">22   </span></a>    </span><span class="s2">// The Kotlin compiler figures out the type of an expression from the information given in the expression</span><span class="s1"> 
+<a name="l23"><span class="ln">23   </span></a> 
+<a name="l24"><span class="ln">24   </span></a>    </span><span class="s2">/* 
+<a name="l25"><span class="ln">25   </span></a>    * i.e. this expression has the number 42, I'm going to say it's of type Int and give it to this variable 
+<a name="l26"><span class="ln">26   </span></a>    * of someNumber 42 (in the case that we didn't explicitly declare Int ...) 
+<a name="l27"><span class="ln">27   </span></a>    * 
+<a name="l28"><span class="ln">28   </span></a>    * */</span><span class="s1"> 
+<a name="l29"><span class="ln">29   </span></a>} 
+<a name="l30"><span class="ln">30   </span></a> 
+<a name="l31"><span class="ln">31   </span></a></span><span class="s2">/**</span><span class="s1"> 
+<a name="l32"><span class="ln">32   </span></a> </span><span class="s2">* Type inference can also happen in functions!</span><span class="s1"> 
+<a name="l33"><span class="ln">33   </span></a> </span><span class="s2">*</span><span class="s1"> 
+<a name="l34"><span class="ln">34   </span></a> </span><span class="s2">* Here, instead of giving an explicit return type, the compiler again &quot;infers&quot; the return type to be Int</span><span class="s1"> 
+<a name="l35"><span class="ln">35   </span></a> </span><span class="s2">*</span><span class="s1"> 
+<a name="l36"><span class="ln">36   </span></a> </span><span class="s2">*/</span><span class="s1"> 
+<a name="l37"><span class="ln">37   </span></a> 
+<a name="l38"><span class="ln">38   </span></a></span><span class="s0">fun </span><span class="s1">addOne(x: Int) = x + </span><span class="s3">1</span><span class="s1"> 
+<a name="l39"><span class="ln">39   </span></a> 
+<a name="l40"><span class="ln">40   </span></a></span><span class="s2">// Or ...</span><span class="s1"> 
+<a name="l41"><span class="ln">41   </span></a> 
+<a name="l42"><span class="ln">42   </span></a></span><span class="s0">fun </span><span class="s1">addTwo(y: Int): Int = y + </span><span class="s3">2 </span><span class="s2">// Explicitly declare that the return type is Int</span></pre>
+</body>
+</html>

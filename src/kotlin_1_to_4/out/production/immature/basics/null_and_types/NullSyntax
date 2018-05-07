@@ -1,0 +1,6 @@
+Kotlin does have null but in order for a variable to work with null in Kotlin we have to assign it the ? operator.
+
+i.e. it stands for "This variable can be of this type OR it can be null. I'm not sure ... "
+
+
+Code does not compile in Kotlin if that null safety operator is not used

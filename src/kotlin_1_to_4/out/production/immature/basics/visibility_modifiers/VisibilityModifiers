@@ -1,0 +1,28 @@
+Just like in Java, Kotlin offers up visibility modifiers for making certain code visible and others not.
+
+In Kotlin there are four visibility modifiers: public, internal, protected, and private.
+
+When no modifier is given, the "default" is used which is public.
+
+Again the four visibility modifiers in Kotlin are:
+
+1. public
+2. internal
+3. protected
+4. private
+
+private -> can only be accessed in the same file, or if it's a class it is only accessible in that class!
+protected -> functions / properties declared as protected inside a class / interface only visible to members
+of that class or interface as well as subclasses
+
+Wait, pause. So what's the difference between private and protected?
+
+private => MUST BE SAME EXACT CLASS
+protected => AVAILABLE TO SUBCLASSES!
+
+internal -> the whole point of internal is to act like "public" but instead of being "public" to everybody
+it is only public to the same module, i.e. think of a package.
+
+"public to module, not public to the universe..."
+
+

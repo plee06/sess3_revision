@@ -1,0 +1,26 @@
+Packages and Imports in Kotlin are the same as Java as well.
+
+We use regular package somepackage.otherpackage ...
+
+and basic import statements.
+
+import somepackage.otherpackage
+
+etc.etc.
+
+
+And of course, don't forget wildcard imports i.e. "import the entire package."
+
+Denoted by: *
+
+Example:
+
+import allofthispackage.*
+
+
+---
+
+Imports can be renamed if two different packages share the same name i.e.
+
+import package1.foo
+import package2.foo as foo2 <-- renaming of the package

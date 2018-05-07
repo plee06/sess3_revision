@@ -1,0 +1,4 @@
+In Kotlin the 'this' keyword is called the "current receiver".
+
+
+In simpler terms, it just refers to the enclosing instance.

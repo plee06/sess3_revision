@@ -1,0 +1,11 @@
+** This is just the basics and you'll have to dive deeper later on.
+
+In Kotlin, uppermost type -> Any, analogous to Object supertype in Java
+
+Any defines toString, hashCode and equals. Also has other extension methods. Chapter 5, it's comign!
+
+Unit type -> equivalent to void in Java
+
+Nothing -> is new and is a "bottom type", opposite of Any. It is the subclass of all types!
+
+Look into Nothing later a bit more ...
