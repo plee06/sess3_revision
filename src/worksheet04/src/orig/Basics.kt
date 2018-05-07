@@ -129,7 +129,7 @@ fun minRecursive(r: Array<Int>): Int {
  * @param b a big integer
  * @return the base 36 equivalent
  */
-fun base36(b: BigInteger): String = b
+fun base36(b: BigInteger): String = b.toString(36) // Running toString with a radix returns the base number of it asked for
 
 /**
  * Splits the String s in half.
