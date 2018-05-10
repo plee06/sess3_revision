@@ -152,7 +152,7 @@ fun base36(b: BigInteger): String = b.toString(36) // Running toString with a ra
  * @param s the string to split
  * @return the split string as a tuple
  */
-fun splitInHalf(s: String): Pair<String, String> = s.partition { c -> s.indexOf(c) != (s.length / 2)  } // fail first
+fun splitInHalf(s: String): Pair<String, String> = s.partition { c -> s.indexOf(c) != (s.length / 2)  }
 
 /**
  * Determines if the given string s is a palindrome.
@@ -215,6 +215,30 @@ fun isPalindrome(s: String): Boolean = TODO()
  * @param lines the lines of a text file
  * @return a map from words to the number of times that word was seen
  */
-fun wordCounter(lines: Array<String>): Map<String, Int> = TODO()
+fun wordCounter(lines: Array<String>): Map<String, Int> {
+    // Splitting a String will give us an Array with each word
+    // Punctuation does not matter
+
+    // We can create a hashMap where if the value exists already we increment the counter
+    // if the value does not already exist then we can create the key-value pair with an initialized value
+    // of 1.
+
+    println(lines.flatMap { it.split(" ")}.groupBy { w -> w}.toString())
+    var m: MutableMap<String, Int> = HashMap<String, Int>()
+
+    for (line in lines) {
+        var curr = line.split(" ") // split with whitespace as delimiter
+
+        for (word in curr) {
+            if (m.containsKey(word)) {
+                m.put(word, m[word]!!.plus(1))
+            } else {
+                m.put(word, 1)
+            }
+        }
+    }
+
+    return m
+}
 
 

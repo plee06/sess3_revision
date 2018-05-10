@@ -136,9 +136,16 @@ class BasicsKtTest {
     /**
      * For you to complete...
      */
-    @Ignore
     @Test
     fun wordCounter() {
-        TODO()
+
+
+        assert(wordCounter(arrayOf("this is a sentence.", "this is a sentence too!")) ==
+                hashMapOf<String, Int>("this" to 2,
+             "is" to  2,
+             "a" to  2,
+             "sentence." to  1,
+             "sentence" to  1,
+             "too!" to  1))
     }
 }

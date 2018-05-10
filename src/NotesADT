@@ -1,0 +1,20 @@
+
+
+When to use which Structural Recursion on ADT?
+
+Normally we want to use the Pattern Matching structure. This means less overall code duplication, imagine having
+to override a function in each inheriting class. i.e. The SumType which is "A is-a B or C." in the SumType Polymorphism
+Pattern.
+
+This is not the case for Product Type Polymorphism where you just declare a method directly inside the class
+to decompose it because it is "A has-a B and C." i.e. ClassA(b: B, c: C). This requires much less code duplication,
+doesn't require duplication at all!
+
+The notes say the following of when to use:
+
+If a method (decomposition) depends on fields and methods within a class, implement it inside the class. i.e. Polymorphism.
+
+If method depends on other data use pattern matching outside of the class.
+
+More than one type of implementation, implement it outside the class. i.e. Pattern Matching instead of a bunch
+of methods inside the class.
